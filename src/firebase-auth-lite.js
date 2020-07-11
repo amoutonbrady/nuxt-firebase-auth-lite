@@ -14,7 +14,7 @@ const firebasePlugin = (_, inject) => {
 
   firebaseAuth.listen((user) => {
     user = user;
-    token = user.tokenManager.idToken;
+    token = user?.tokenManager?.idToken ?? null;
   });
 
   inject("fireAuth", firebaseAuth);

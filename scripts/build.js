@@ -15,6 +15,7 @@ build({
   bundle: true,
   minify: true,
   outdir: join(process.cwd(), "dist"),
+  target: "es2019",
   format: "esm",
   platform: "browser",
 });
