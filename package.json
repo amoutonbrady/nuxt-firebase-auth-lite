@@ -1,6 +1,6 @@
 {
   "name": "@amoutonbrady/nuxt-firebase-auth-lite",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "Nuxt integration for firebase-auth-lite",
   "main": "dist/index.js",
   "private": false,
