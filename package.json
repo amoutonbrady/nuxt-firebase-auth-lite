@@ -4,6 +4,9 @@
   "description": "Nuxt integration for firebase-auth-lite",
   "main": "dist/index.js",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/amoutonbrady/nuxt-firebase-auth-lite.git"
