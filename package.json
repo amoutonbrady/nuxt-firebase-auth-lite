@@ -1,6 +1,6 @@
 {
   "name": "@amoutonbrady/nuxt-firebase-auth-lite",
-  "version": "0.8.4",
+  "version": "0.8.4.1",
   "description": "Nuxt integration for firebase-auth-lite",
   "main": "dist/index.js",
   "private": false,
@@ -12,7 +12,8 @@
     "url": "https://github.com/amoutonbrady/nuxt-firebase-auth-lite.git"
   },
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "types": "./types/firebase-auth-lite.d.ts",
   "scripts": {
