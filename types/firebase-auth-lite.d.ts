@@ -102,23 +102,23 @@ export default class Auth {
 declare module "vue/types/vue" {
   interface Vue {
     $fireAuth: Auth;
-    $fireUser: User | null;
-    $fireToken: string | null;
+    $fireUser: () => User | null;
+    $fireToken: () => string | null;
   }
 }
 
 declare module "@nuxt/types" {
   interface NuxtAppOptions {
     $fireAuth: Auth;
-    $fireUser: User | null;
-    $fireToken: string | null;
+    $fireUser: () => User | null;
+    $fireToken: () => string | null;
   }
 }
 
 declare module "vuex/types/index" {
   interface Store<S> {
     $fireAuth: Auth;
-    $fireUser: User | null;
-    $fireToken: string | null;
+    $fireUser: () => User | null;
+    $fireToken: () => string | null;
   }
 }

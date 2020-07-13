@@ -1,6 +1,6 @@
 {
   "name": "@amoutonbrady/nuxt-firebase-auth-lite",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "description": "Nuxt integration for firebase-auth-lite",
   "main": "dist/index.js",
   "private": false,
@@ -17,7 +17,8 @@
   ],
   "types": "./types/firebase-auth-lite.d.ts",
   "scripts": {
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "prepublishOnly": "pnpm build"
   },
   "engines": {
     "npm": ">= 4.0.0"
