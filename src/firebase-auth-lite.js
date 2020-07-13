@@ -6,15 +6,12 @@ const firebasePlugin = (_, inject) => {
     redirectUri: "",
   });
 
-  let user = null;
-  const fireUser = () => user;
-
-  let token = null;
-  const fireToken = () => token;
+  let fireUser = null;
+  let fireToken = null;
 
   firebaseAuth.listen((user) => {
-    user = user;
-    token = user?.tokenManager?.idToken ?? null;
+    fireUser = user;
+    fireToken = user?.tokenManager?.idToken ?? null;
   });
 
   inject("fireAuth", firebaseAuth);
