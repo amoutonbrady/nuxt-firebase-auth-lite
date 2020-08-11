@@ -104,6 +104,7 @@ declare module "vue/types/vue" {
     $fireAuth: Auth;
     $fireUser: () => User | null;
     $fireToken: () => string | null;
+    $apiKey: string;
   }
 }
 
@@ -112,6 +113,7 @@ declare module "@nuxt/types" {
     $fireAuth: Auth;
     $fireUser: () => User | null;
     $fireToken: () => string | null;
+    $apiKey: string;
   }
 }
 
@@ -120,5 +122,6 @@ declare module "vuex/types/index" {
     $fireAuth: Auth;
     $fireUser: () => User | null;
     $fireToken: () => string | null;
+    $apiKey: string;
   }
 }

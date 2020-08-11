@@ -12,6 +12,7 @@ const firebasePlugin = (_, inject) => {
   inject("fireAuth", firebaseAuth);
   inject("fireUser", fireUser);
   inject("fireToken", fireToken);
+  inject("apiKey", "<%= options.apiKey %>");
 };
 
 export default firebasePlugin;

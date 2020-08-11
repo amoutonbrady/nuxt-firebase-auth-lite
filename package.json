@@ -36,11 +36,11 @@
     "vuex": "^3.5.1"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.13.3",
-    "esbuild": "^0.6.1"
+    "@nuxt/types": "^2.14.1",
+    "esbuild": "^0.6.20"
   },
   "dependencies": {
-    "firebase-auth-lite": "^0.8.4",
+    "firebase-auth-lite": "^0.8.5",
     "vue": "^2.6.11",
     "vuex": "^3.5.1"
   }
