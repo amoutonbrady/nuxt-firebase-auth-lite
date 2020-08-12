@@ -1,19 +1,21 @@
-import { Auth, Storage } from "./mod";
 import { Plugin } from "@nuxt/types";
+import cookieUniversal from "cookie-universal";
+import { Auth, Storage } from "./mod";
 
-const firebasePlugin: Plugin = (ctx, inject) => {
+const firebasePlugin: Plugin = ({ req, res }, inject) => {
+  const cookie = cookieUniversal(req, res, true);
   const storage: Storage = {
     set(key, value) {
-      return ctx.app.$cookies.set(key, value, {
+      return cookie.set(key, value, {
         sameSite: "strict",
         path: "/",
       });
     },
     get(key) {
-      return ctx.app.$cookies.get(key);
+      return cookie.get(key);
     },
     remove(key) {
-      return ctx.app.$cookies.remove(key);
+      return cookie.remove(key);
     },
   };
 

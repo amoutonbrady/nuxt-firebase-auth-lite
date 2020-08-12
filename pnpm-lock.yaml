@@ -1,5 +1,5 @@
 dependencies:
-  cookie-universal-nuxt: 2.1.4
+  cookie-universal: 2.1.4
   firebase-auth-lite: 0.8.5
   typescript: 4.0.1-rc
   vue: 2.6.11
@@ -524,13 +524,6 @@ packages:
       node: '>= 0.10.0'
     resolution:
       integrity: sha512-DW46nrsMJgy9kqAbPt5rKaCr7uFtpo4mSUvLHIUbJEjm0vo+aY5QLwBUq3FK4tRnJr/X0Psc0C4jf/h+HtXSMw==
-  /cookie-universal-nuxt/2.1.4:
-    dependencies:
-      '@types/cookie': 0.3.3
-      cookie-universal: 2.1.4
-    dev: false
-    resolution:
-      integrity: sha512-xbn4Ozs9S0u2+0mQTZRwGlBL9MGNq8N4H6iGfprR5ufZFCS2hGef++3DBHSmHXZi30Wu3Q7RI/GkNMhz3cecmg==
   /cookie-universal/2.1.4:
     dependencies:
       '@types/cookie': 0.3.3
@@ -1117,8 +1110,8 @@ specifiers:
   '@vue/compiler-sfc': ^3.0.0-rc.5
   chalk: ^4.1.0
   chokidar: ^3.4.2
-  cookie-universal-nuxt: ^2.1.4
-  esbuild: ^0.6.20
+  cookie-universal: ^2.1.4
+  esbuild: ^0.6.21
   firebase-auth-lite: ^0.8.5
   globby: ^11.0.1
   typescript: ^4.0.1-rc

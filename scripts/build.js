@@ -18,4 +18,5 @@ build({
   target: "es2019",
   format: "cjs",
   platform: "node",
+  external: ["cookie-universal"],
 });

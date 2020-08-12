@@ -7,7 +7,7 @@
     "target": "ESNext",
     "module": "CommonJS",
     "types": [
-      "cookie-universal-nuxt",
+      "cookie-universal",
       "@nuxt/types",
       "chokidar",
       "vue-router",
