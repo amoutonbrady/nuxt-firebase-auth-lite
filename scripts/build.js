@@ -2,7 +2,7 @@ const { build } = require("esbuild");
 const { join } = require("path");
 
 build({
-  entryPoints: [join(process.cwd(), "src/index.js")],
+  entryPoints: [join(process.cwd(), "src/index.ts")],
   bundle: true,
   minify: false,
   outdir: join(process.cwd(), "dist"),
@@ -11,12 +11,11 @@ build({
 });
 
 build({
-  entryPoints: [join(process.cwd(), "src/firebase-auth-lite.js")],
+  entryPoints: [join(process.cwd(), "src/firebase-auth-lite.ts")],
   bundle: true,
   minify: false,
   outdir: join(process.cwd(), "dist"),
   target: "es2019",
-  format: "esm",
-  platform: "browser",
-  external: ["firebase-auth-lite"],
+  format: "cjs",
+  platform: "node",
 });

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "module": "CommonJS",
+    "types": [
+      "cookie-universal-nuxt",
+      "@nuxt/types",
+      "chokidar",
+      "vue-router",
+      "vue-meta",
+      "vue-server-renderer",
+      "globby",
+      "vue-loader"
+    ],
+    "resolveJsonModule": true,
+    "strict": true,
+    "outDir": "types"
+  }
+}

@@ -15,9 +15,9 @@
     "dist",
     "types"
   ],
-  "types": "types/firebase-auth-lite.d.ts",
+  "types": "types/src/index.d.ts",
   "scripts": {
-    "build": "node scripts/build.js",
+    "build": "node scripts/build.js && tsc",
     "prepublishOnly": "pnpm build"
   },
   "engines": {
@@ -32,15 +32,26 @@
   "author": "Alexandre Mouton-Brady <amoutonbrady@gmail.com>",
   "license": "ISC",
   "peerDependencies": {
+    "cookie-universal-nuxt": "^2.1.4",
     "vue": "^2.6.11",
     "vuex": "^3.5.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.1",
-    "esbuild": "^0.6.20"
+    "@vue/compiler-sfc": "^3.0.0-rc.5",
+    "chalk": "^4.1.0",
+    "chokidar": "^3.4.2",
+    "esbuild": "^0.6.20",
+    "globby": "^11.0.1",
+    "vue-loader": "^16.0.0-beta.1",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^3.4.3",
+    "vue-server-renderer": "^2.6.11"
   },
   "dependencies": {
+    "cookie-universal-nuxt": "^2.1.4",
     "firebase-auth-lite": "^0.8.5",
+    "typescript": "^4.0.1-rc",
     "vue": "^2.6.11",
     "vuex": "^3.5.1"
   }
