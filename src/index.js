@@ -8,7 +8,7 @@ export default function firebaseAuthLiteModule(options) {
   this.addPlugin({
     src: resolve(__dirname, "firebase-auth-lite.js"),
     fileName: "firebase-auth-lite.js",
-    ssr: false,
+    ssr: true,
     options,
   });
 }
