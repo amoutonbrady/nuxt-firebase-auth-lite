@@ -428,7 +428,9 @@ export class Auth {
       idToken: verifyEmail ? this.user?.tokenManager.idToken : undefined,
       requestType,
       email,
-      continueUrl: this.redirectUri + `?email=${email}`,
+      continueUrl: this.redirectUri
+        ? `${this.redirectUri}?email=${email}`
+        : undefined,
     });
   }
 
