@@ -1,4 +1,9 @@
 /**
+ * /!\ THIS CODE IS ENTIRELY COPIED/PASTED FROM THIS REPO:
+ * https://github.com/samuelgozi/firebase-auth-lite
+ *
+ * I ONLY ADDED A COUPLE MODIFICATION TO MAKE IT WORK SERVER SIDE
+ *
  * Partial documentation fot the Firebase API can be found here.
  * https://cloud.google.com/identity-platform/docs/reference/rest/v1/accounts
  */
